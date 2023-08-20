@@ -5,15 +5,15 @@ import Landing from './components/Landing'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-vintage-white h-screen">
       <BrowserRouter>
-      <header>
+      <header className='bg-vintage-tan'>
         <nav>
-          <Link to={'/'}>Home</Link>
+          <Link to={'/'} className="text-vintage-blue font-custom">Home</Link>
         </nav>
       </header>
-      <Routes>
-        <Route path='/' element={<Landing/>}/>
+      <Routes >
+        <Route path='/' element={<Landing className='bg-vintage-blue h-screen'/>}/>
       </Routes>
       
       </BrowserRouter>
